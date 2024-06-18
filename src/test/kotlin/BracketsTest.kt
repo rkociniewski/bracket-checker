@@ -5,11 +5,22 @@ import kotlin.test.assertTrue
 class BracketsTest {
     @Test
     fun `should return true when brackets are balanced`() {
-        assertTrue(isBalanced("()()"))
+        assertTrue(isBalanced("()"))
+        assertTrue(isBalanced("[]"))
+        assertTrue(isBalanced("{}"))
+        assertTrue(isBalanced("{()}"))
+        assertTrue(isBalanced("{([])}"))
+        assertTrue(isBalanced("()[]{}"))
     }
 
     @Test
     fun `should return false when brackets aren't balanced`() {
-        assertFalse(isBalanced("(()"))
+        assertFalse(isBalanced("{{"))
+        assertFalse(isBalanced("{)"))
+        assertFalse(isBalanced(")"))
+        assertFalse(isBalanced("]["))
+        assertFalse(isBalanced("}{"))
+        assertFalse(isBalanced(")("))
+        assertFalse(isBalanced("([)]"))
     }
 }

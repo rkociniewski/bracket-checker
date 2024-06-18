@@ -17,12 +17,12 @@ version = "1.0.0"
 /**
  * Java source compatibility
  */
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 /**
  * Java target compatibility
  */
-java.targetCompatibility = JavaVersion.VERSION_17
+java.targetCompatibility = JavaVersion.VERSION_21
 
 /**
  * detekt plugin version
@@ -105,8 +105,8 @@ sourceSets {
 
 // detekt configuration
 detekt {
-    source = files("src/main/kotlin")
-    config = files("$projectDir/detekt.yml")
+    source.setFrom("src/main/kotlin")
+    config.setFrom("$projectDir/detekt.yml")
     autoCorrect = true
 }
 
@@ -230,7 +230,7 @@ tasks {
             sarif.required.set(false)
 
             html.required.set(true)
-            html.outputLocation.set(file("$buildDir/reports/detekt/detekt.html"))
+            html.outputLocation.set(file("${layout.buildDirectory}/reports/detekt/detekt.html"))
 
         }
     }
@@ -240,7 +240,7 @@ tasks {
         /**
          * output directory of dokka documentation.
          */
-        outputDirectory.set(buildDir.resolve("dokka"))
+        outputDirectory.set(layout.buildDirectory.dir("dokka"))
         /**
          * source set configuration.
          */
