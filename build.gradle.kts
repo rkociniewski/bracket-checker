@@ -67,7 +67,7 @@ tasks.dokkaHtml {
 }
 
 tasks.jacocoTestReport {
-    dependsOn(tasks.test) // testy muszą się wykonać przed raportem
+    dependsOn(tasks.test)
     reports {
         xml.required.set(true)
         html.required.set(true)
@@ -88,7 +88,7 @@ tasks.jacocoTestCoverageVerification {
         rule {
             enabled = true
             element = "CLASS"
-            includes = listOf("rk.*") // tylko wybrane pakiety
+            includes = listOf("rk.*")
 
             limit {
                 counter = "LINE"
@@ -99,14 +99,12 @@ tasks.jacocoTestCoverageVerification {
     }
 }
 
-// Opcjonalnie: task do czyszczenia raportów
 tasks.register("cleanReports") {
     doLast {
         delete("${layout.buildDirectory}/reports")
     }
 }
 
-// Opcjonalnie: task łączący generowanie raportu i weryfikację
 tasks.register("coverage") {
     dependsOn(tasks.test, tasks.jacocoTestReport, tasks.jacocoTestCoverageVerification)
 }
