@@ -1,4 +1,4 @@
-rootProject.name = "brackets"
+rootProject.name = "bracket-checker"
 
 pluginManagement {
     repositories {
