@@ -1,9 +1,9 @@
-[![version](https://img.shields.io/badge/version-1.0.1-yellow.svg)](https://semver.org)
-[![Kotlin](https://img.shields.io/badge/Kotlin-2.1.21-blueviolet?logo=kotlin)](https://kotlinlang.org/)
+[![version](https://img.shields.io/badge/version-1.1.8-yellow.svg)](https://semver.org)
+[![Kotlin](https://img.shields.io/badge/Kotlin-2.2.21=0-blueviolet?logo=kotlin)](https://kotlinlang.org/)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Build](https://github.com/rkociniewski/bracket-checker/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/bracket-checker/actions/workflows/main.yml)
 [![codecov](https://codecov.io/gh/rkociniewski/bracket-checker/branch/main/graph/badge.svg)](https://codecov.io/gh/rkociniewski/bracket-checker)
-[![Gradle](https://img.shields.io/badge/Gradle-8.14.1-blue?logo=gradle)](https://gradle.org/)
+[![Gradle](https://img.shields.io/badge/Gradle-9.10-blue?logo=gradle)](https://gradle.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-greem.svg)](https://opensource.org/licenses/MIT)
 
 # Bracket Balance Checker
