@@ -80,7 +80,8 @@ All edge cases are covered, including:
 * Improperly ordered or unmatched brackets
 * Strings with mixed content (text and brackets)
 
-Tests are located in [`BracketsTest.kt`](src/test/kotlin/rk/powermilk/BracketsTest.kt) and use JUnit 5 with `@ParameterizedTest`.
+Tests are located in [`BracketsTest.kt`](src/test/kotlin/rk/powermilk/BracketsTest.kt) and use JUnit 5 with
+`@ParameterizedTest`.
 
 ---
 
