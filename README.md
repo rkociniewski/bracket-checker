@@ -1,4 +1,4 @@
-[![version](https://img.shields.io/badge/version-1.1.8-yellow.svg)](https://semver.org)
+[![version](https://img.shields.io/badge/version-1.1.13-yellow.svg)](https://semver.org)
 [![Kotlin](https://img.shields.io/badge/Kotlin-2.2.21=0-blueviolet?logo=kotlin)](https://kotlinlang.org/)
 [![Awesome Kotlin Badge](https://kotlin.link/awesome-kotlin.svg)](https://github.com/KotlinBy/awesome-kotlin)
 [![Build](https://github.com/rkociniewski/bracket-checker/actions/workflows/main.yml/badge.svg)](https://github.com/rkociniewski/bracket-checker/actions/workflows/main.yml)

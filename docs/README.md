@@ -1,4 +1,4 @@
-# 📚 Palindrome Checker
+# 📚 Bracket Checker
 
 ## 📖 Table of Contents
 
